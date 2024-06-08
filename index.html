@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa, #e0eafc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .login-header {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+        .login-body {
+            padding: 30px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-custom {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(to right, #0056b3, #0096d6);
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h2>Welcome to Health Monitoring System</h2>
+        </div>
+        <div class="login-body">
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-custom btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
